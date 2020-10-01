@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Dungeon;
+    src: url('../assets/fonts/DUNGRG__.TTF');
+}
+@font-face {
+    font-family: PlayFair N;
+    src: url('../assets/fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+    font-family: PlayFair ital;
+    src: url('../assets/fonts/PlayfairDisplay-Italic.ttf');
+}
+@font-face {
+    font-family: King;
+    src: url('../assets/fonts/King\ Arthur\ Legend.ttf');
+}
+body{
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: powderblue;
+}
+h1 {
+	font-family: Dungeon;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: bold;
+	color: #D20040;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	min-width:200px;
+    max-width:840px;
+    padding-top: 10px;
+}
+h2 {
+	font-family: Dungeon;
+	font-size: 48px;
+	font-style: normal;
+    font-weight: normal;
+	color: #00DD64;
+	text-align: left;
+    max-width: 600px;
+}
+h3 {
+	font-family: Dungeon;
+	font-size: 32px;
+	font-style: normal;
+    font-weight: normal;
+	color: #00adad;
+	text-align: left;
+    max-width: 1000px;
+}
+a:link, a:visited {
+    font-family: PlayFair N;
+	font-size: 16px;
+    color: #4700FF;
+    text-decoration: underline;
+    text-align: justify;
+    cursor: auto;
+  }
+  
+  a:link:active, a:visited:active {
+    color: #FF0036;
+  }
+
+.text1 {
+	font-family: PlayFair N;
+	font-size: 16px;
+    line-height: 1.3;
+    font-style: normal;
+    color: #DDDDDD;
+	text-align: justify;
+	min-width:200px; /* ancho de columna variable pero dentro de un rango*/
+    max-width:1920px;
+    margin-top:20px;
+	margin:25px;
+	float:left;
+}
+
+.text2 {
+	font-family: PlayFair N;
+	font-size: 16px;
+    line-height: 1.3;
+    font-style: normal;
+    color: #FF0040;
+	text-align: justify;
+	min-width:200px; /* ancho de columna variable pero dentro de un rango*/
+    max-width:1800px;
+    margin-top:10px;
+	margin:25px;
+	float:center;
+}
+
+/* tell the container's children to float left: */
+.float-comic {
+    float: left;
+    margin-right:5px;
+}
+
+.float-portrait {
+    float: right;
+    margin-right:5px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
