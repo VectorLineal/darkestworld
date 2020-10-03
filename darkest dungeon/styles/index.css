@@ -18,10 +18,21 @@
 }
 body{
     background-image: url('../assets/background.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-color: powderblue;
+    background-size: 100%;
 }
+iframe {
+    max-width: 100%;
+  }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
 h1 {
 	font-family: Dungeon;
 	font-size: 64px;
@@ -52,10 +63,50 @@ h3 {
 	text-align: left;
     max-width: 1000px;
 }
+dt{
+    color: #27ac93;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 6em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+  ul.colored{
+      list-style-type: none;
+  }
+  ul.colored li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ff0076; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  ul.colored2 li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #00aaa6; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 a:link, a:visited {
     font-family: PlayFair N;
 	font-size: 16px;
-    color: #4700FF;
+    color: #7700FF;
     text-decoration: underline;
     text-align: justify;
     cursor: auto;
@@ -108,7 +159,7 @@ a:link, a:visited {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
   }
 
 .center2 {
