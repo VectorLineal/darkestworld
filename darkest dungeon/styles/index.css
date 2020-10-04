@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@font-face {
+@font-face {/* Diversas fuentes se declaran acá*/
     font-family: Dungeon;
     src: url('../assets/fonts/DUNGRG__.TTF');
 }
@@ -12,7 +12,7 @@
     font-family: PlayFair ital;
     src: url('../assets/fonts/PlayfairDisplay-Italic.ttf');
 }
-body{
+body{ /*se establece una imagen de fondo que esté estática respecto al scroll y se repita verticalmente cuando sea neceario*/
     background-image: url('../assets/background.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -22,19 +22,19 @@ body{
 iframe {
     max-width: 100%;
   }
-img {
+img {/*La imagen quedará centrada y escalará automáticamente respecto a lo horizontal*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
     height: auto;
   }
-  img.button {
+  img.button {/*especial para botones que lleven imágenes*/
     display: block;
     max-width: 80%;
     margin-bottom: 5em;
   }
-h1 {
+h1 {/*Letra más grande tipo Dungeon, solo soporta carateres en inglés*/
 	font-family: Dungeon;
 	font-size: 64px;
 	font-style: normal;
@@ -64,10 +64,10 @@ h3 {
 	text-align: left;
     max-width: 1000px;
 }
-dt{
+dt{/*Color para los títulos de tablas de descripción*/
     color: #27ac93;
 }
-table { 
+table { /*La tabla de bordes grises que autoajusta su ancho*/
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
@@ -75,19 +75,19 @@ table {
     width: 100%;
     border: 1px solid black;
   }
-  th{
+  th{/*lemento de tabla que tendrá cierto color con fondo con baja opacidad y bordes dobles*/
       text-align: left;
       height: 100%;
       border: 1px solid black;
       padding: 2px;
       background: rgba(235, 243, 235, 0.4);
   }
-  td{
+  td{/*centrar el texto en las casillas*/
       vertical-align: center;
       border: 1px solid black;
       padding: 5px;
   }
-ul {
+ul {/*Se configura así para generar buen espaciado respecto a arriba y abajo*/
   display: block;
   list-style-type: disc;
   margin-top: 6em;
@@ -105,26 +105,26 @@ ol {
     margin-right: 0;
     padding-left: 40px;
   }
-  ul.colored{
+  ul.colored{/*En caso de querer colorear las viñetas*/
       list-style-type: none;
   }
   ul.colored li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #ff0076; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content: "\2022";  /* Unicode \2022 viñetas */
+    color: #ff0076;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
   ul.colored2 li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #00aaa6; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content: "\2022";
+    color: #00aaa6;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
-a:link, a:visited {
+a:link, a:visited { /*Personalizar los links para que hagan mejor contraste con los oclores de fonde*/
     font-family: PlayFair N;
 	font-size: 16px;
     color: #7700FF;
@@ -136,14 +136,14 @@ a:link, a:visited {
   a:link:active, a:visited:active {
     color: #FF0036;
   }
-  a .textbutton{
+  a .textbutton{ /*este se us apara esconder texto en ciertos botones y que se muestre al pasar el mouse por encim*/
     font-family: PlayFair N;
 	font-size: 14px;
     line-height: 1.3;
     font-style: normal;
     color: #dd3267;
 	text-align: justify;
-	min-width:200px; /* ancho de columna variable pero dentro de un rango*/
+	min-width:200px;
     max-width:1800px;
     margin-top:10px;
 	margin:25px;
@@ -154,17 +154,17 @@ a:link, a:visited {
     visibility: visible;
   }
     .menunav {
-        height: 100%; /* 100% Full-height */
-        width: 242; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
+        height: 100%;
+        width: 242;
+        position: fixed; /* Se qeda en el mismo lugar a pesar del scroll */
+        z-index: 1; /* Siempre encima de todo lo demás */
+        top: 0;
         left: 0;
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 300px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        overflow-x: hidden;
+        padding-top: 300px;/*Distancia semejante al centro de la página*/
+        transition: 0.5s;
     }
-  .menunav a {
+  .menunav a {/*Configuración especial para los botones del menu de navegación*/
     padding: 10px;
     width: 5em;
     font-family: Dungeon;
@@ -180,13 +180,13 @@ a:link, a:visited {
     border-radius: 25%;
   }
 
-  .menunav a:hover {
+  .menunav a:hover {/*Al apsar el mouse sobre los botnes del menu*/
     color: #ffff00;
     text-shadow: 1px 1px #a1a1a1;
     background: #919191;
     cursor: pointer;
 }
-.text1 {
+.text1 {/*Configuración de texto para parrafos en la izquierda*/
 	font-family: PlayFair N;
 	font-size: 16px;
     line-height: 1.3;
@@ -200,7 +200,7 @@ a:link, a:visited {
 	float:left;
 }
 
-.text2 {
+.text2 {/*Configuración para txto centrado*/
 	font-family: PlayFair N;
 	font-size: 16px;
     line-height: 1.3;
@@ -214,30 +214,30 @@ a:link, a:visited {
 	float:center;
 }
 
-/* tell the container's children to float left: */
+/* Que los contenedores hijos vayan a la izquierda*/
 .float-comic {
     float: left;
     margin-right:5px;
 }
-
+/*a la derecha*/
 .float-portrait {
     float: right;
     margin-right:5px;
 }
-.nocenter {
+.nocenter {/*para quitar el centrado*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
-.center {
+.center {/*para centrar*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
   }
 
-.center2 {
+.center2 {/*Para centrar y ocupar más espacio a lo ancho*/
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -247,7 +247,7 @@ a:link, a:visited {
 /* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
 
 .clearfix {
-    *zoom:1 /* for IE */
+    *zoom:1
 }
 
 .clearfix:before,
