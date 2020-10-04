@@ -19,6 +19,9 @@ body{ /*se establece una imagen de fondo que esté estática respecto al scroll 
     background-color: powderblue;
     background-size: 100%;
 }
+div{
+    background-color:  rgba(0, 0, 0, 0.1);
+}
 iframe {
     max-width: 100%;
   }
@@ -127,7 +130,7 @@ ol {
 a:link, a:visited { /*Personalizar los links para que hagan mejor contraste con los oclores de fonde*/
     font-family: PlayFair N;
 	font-size: 16px;
-    color: #7700FF;
+    color: #3400ff;
     text-decoration: underline;
     text-align: justify;
     cursor: pointer;
