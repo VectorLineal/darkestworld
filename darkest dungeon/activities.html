@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta lang="es">
-<title>Historia</title>
+<title>Actividades</title>
 <link href="styles/index.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
@@ -13,6 +13,19 @@
     <div>
         <h1>Principales Eventos</h1>
     </div>
+    <div class="menunav"> <!-- Contenedor para darle forma al menu -->
+		<a class="buttonMenu" href="characters.html">Personajes</a>
+		<a class="buttonMenu" href="activities.html">Actividades</a>
+		<a class="buttonMenu" href="location.html">Locaciones</a>
+        <a class="buttonMenu" href="history.html">Historia</a>
+        <a class="buttonMenu" href="references.html">Bibliografía</a>
+	</div>
+	<div>
+		<a href="index.html">
+			<span class="textbutton"> ir a página de inicio</span>
+			<img src="assets/home.png" width="200" class="button"/>
+		</a>
+	</div>
     <div class="clearfix">
         <img src="assets/crier.png" width=300 class="float-comic">
         <div>
@@ -24,13 +37,13 @@
         <p class="text1">Son bastantes como para mencionarse en este pequeño artículo, pero destaco:</p>
         <p>
             <dl class="text1">
-                <dt>Incursión Bandida</dt>
+                <dt id="bandit">Incursión Bandida</dt>
                 <dd>La aldea sufre un ataque de parte de un grupo de bandidos comandados por <a href="characters.html#vvulf">Vvulf</a> que en caso de ignorarse, la aldea será saqueada.</dd>
-                <dt>Ladrón de la Noche</dt>
+                <dt id="thief">Ladrón de la Noche</dt>
                 <dd><a href="characters.html#shrieker">El Chillón</a> se ha robado varios ítems de los heroes por lo que es posible recuperarlos sobriviendo al encuentro de esta peligrosa ave.</dd>
-                <dt>Heregía en la Sangre</dt>
+                <dt>Herejía en la Sangre</dt>
                 <dd>A partir de este evento, <a href="characters.html#fanatic">El Fanático</a> podrá aparecer cuando en una expeción haya más de dos infectados con la maldición carmesí.</dd>
-                <dt>Un Velo Levantado</dt>
+                <dt id="veil">Un Velo Levantado</dt>
                 <dd>Todos los afectados por la maldición carmesí se curarán.</dd>
                 <dt>Del Más Allá</dt>
                 <dd>Uno de tres héroes aleatorios podrá resucitar del cementerio.</dd>
