@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- -->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta lang="es">
+<title>Mapa interactivo</title>
+<link href="styles/index.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+</head>
+
+<body class="center">
+    <div>
+        <h1>Mapa Interactivo</h1>
+    </div>
+    <div class="menunav"> <!-- Contenedor para darle forma al menu -->
+		<a class="buttonMenu" href="characters.html">Personajes</a>
+		<a class="buttonMenu" href="activities.html">Actividades</a>
+		<a class="buttonMenu" href="location.html">Locaciones</a>
+        <a class="buttonMenu" href="history.html">Historia</a>
+        <a class="buttonMenu" href="references.html">Bibliografía</a>
+        <a class="buttonMenu" href="map.html">Mapa</a>
+	</div>
+	<div>
+		<a href="index.html">
+			<span class="textbutton"> ir a página de inicio</span>
+			<img src="assets/home.png" width="200" class="button"/>
+		</a>
+    </div>
+    <!-- Se carga el archivo phaser que contiene el mapa interactivo -->
+    <canvas>No soportado en este navegador.</canvas>
+    <script type="module" src="main_layer/Main.js"></script>
+
+</body>
+</html>

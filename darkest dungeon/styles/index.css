@@ -20,7 +20,7 @@ body{ /*se establece una imagen de fondo que esté estática respecto al scroll 
     background-size: 100%;
 }
 div{
-    background-color:  rgba(0, 0, 0, 0.1);
+    background-color:  rgba(0, 0, 0, 0.25);
 }
 iframe {
     max-width: 100%;
